@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package common;
+
+option java_multiple_files = true;
+option java_package = "com.proto.models";
+
+
+message Car {
+  string make = 1;
+  string model = 2;
+  int32 year = 3;
+  BodyStyle body_style = 4;
+}
+
+enum BodyStyle {
+  SEDAN = 0;
+  COUPE = 1;
+  SUV = 2;
+}
